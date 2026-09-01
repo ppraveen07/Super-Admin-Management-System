@@ -1,0 +1,517 @@
+.dashboard-page {
+  padding: 42px 0;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+
+  font-size: 34px;
+  font-weight: 750;
+
+  color: #7638e8;
+}
+
+.dashboard-header p {
+  margin: 7px 0 0;
+
+  color: #7c8292;
+  font-size: 15px;
+}
+
+.refresh-btn,
+.primary-btn {
+  border: none;
+
+  background:
+    linear-gradient(
+      135deg,
+      #8d42ef,
+      #7630d9
+    );
+
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 14px;
+
+  font-size: 15px;
+  font-weight: 650;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 7px 18px
+    rgba(118, 48, 217, 0.25);
+}
+
+.stat-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 28px;
+
+  margin-bottom: 30px;
+}
+
+.dashboard-stat-card {
+  min-height: 125px;
+
+  padding: 28px;
+
+  border-radius: 20px;
+
+  background: white;
+
+  border:
+    1px solid #eee9fa;
+
+  box-shadow:
+    0 15px 30px
+    rgba(50, 35, 90, 0.11);
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+}
+
+.stat-label {
+  display: block;
+
+  color: #737989;
+
+  font-size: 15px;
+
+  margin-bottom: 13px;
+}
+
+.dashboard-stat-card strong {
+  display: block;
+
+  color: #252d3a;
+
+  font-size: 35px;
+
+  line-height: 1;
+}
+
+.stat-growth {
+  display: block;
+
+  margin-top: 13px;
+
+  color: #7b3df0;
+
+  font-size: 14px;
+}
+
+.stat-icon {
+  width: 56px;
+  height: 56px;
+
+  border-radius: 15px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 27px;
+}
+
+.purple-icon {
+  background: #eee8ff;
+  color: #813cf1;
+}
+
+.blue-icon {
+  background: #dcecff;
+  color: #2469e9;
+}
+
+.violet-icon {
+  background: #f0e2ff;
+  color: #8d38ed;
+}
+
+.orange-icon {
+  background: #ffecd2;
+  color: #ee6400;
+}
+
+.statistics-grid {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 28px;
+
+  margin-bottom: 30px;
+}
+
+.statistics-card,
+.activity-card {
+  padding: 28px;
+
+  border-radius: 20px;
+
+  background: white;
+
+  border:
+    1px solid #eee9fa;
+
+  box-shadow:
+    0 15px 30px
+    rgba(50, 35, 90, 0.11);
+}
+
+.statistics-title {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 22px;
+}
+
+.statistics-title h2,
+.activity-header h2 {
+  margin: 0;
+
+  font-size: 21px;
+
+  color: #252d3a;
+}
+
+.statistics-title span,
+.activity-count {
+  background: #f2f1fa;
+
+  color: #949bab;
+
+  padding: 7px 13px;
+
+  border-radius: 20px;
+
+  font-size: 13px;
+}
+
+.mini-stat-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+.mini-stat {
+  text-align: center;
+
+  border-radius: 15px;
+
+  padding: 22px 10px;
+}
+
+.mini-stat strong {
+  display: block;
+
+  font-size: 34px;
+
+  margin-bottom: 7px;
+}
+
+.mini-stat label {
+  display: block;
+
+  color: #737989;
+
+  font-size: 14px;
+}
+
+.mini-stat small {
+  display: block;
+
+  margin-top: 10px;
+
+  font-size: 13px;
+}
+
+.purple-bg {
+  background: #f4f1ff;
+}
+
+.purple-bg strong,
+.purple-bg small {
+  color: #7b3df0;
+}
+
+.yellow-bg {
+  background: #fffbea;
+}
+
+.yellow-bg strong,
+.yellow-bg small {
+  color: #d49300;
+}
+
+.red-bg {
+  background: #fff0f0;
+}
+
+.red-bg strong,
+.red-bg small {
+  color: #e3262d;
+}
+
+.distribution {
+  border-top:
+    1px solid #eeeaf4;
+
+  margin-top: 27px;
+
+  padding-top: 21px;
+}
+
+.distribution h3 {
+  color: #596174;
+
+  font-size: 16px;
+
+  margin:
+    0
+    0
+    14px;
+}
+
+.chips {
+  display: flex;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding: 9px 15px;
+
+  border-radius: 22px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.purple-chip {
+  background: #f1e5ff;
+  color: #7830dd;
+}
+
+.blue-chip {
+  background: #deedff;
+  color: #2563d9;
+}
+
+.gray-chip {
+  background: #f2f3f5;
+  color: #465063;
+}
+
+.violet-chip {
+  background: #f1e3ff;
+  color: #8438df;
+}
+
+.view-btn {
+  margin-top: 22px;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #7838df;
+
+  font-weight: 650;
+
+  cursor: pointer;
+}
+
+.activity-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding-bottom: 20px;
+
+  border-bottom:
+    1px solid #eeeaf4;
+}
+
+.activity-header p {
+  margin: 6px 0 0;
+
+  color: #7c8292;
+}
+
+.activity-count {
+  color: #7638df;
+
+  background: #eee7ff;
+}
+
+.activity-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 18px 0;
+
+  border-bottom:
+    1px solid #f0edf5;
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-avatar {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+}
+
+.purple-avatar {
+  background: #eee5ff;
+  color: #7935e5;
+}
+
+.blue-avatar {
+  background: #e0edff;
+  color: #2664d4;
+}
+
+.yellow-avatar {
+  background: #fff2cc;
+  color: #c88a00;
+}
+
+.activity-item div:nth-child(2) {
+  flex: 1;
+}
+
+.activity-item strong {
+  font-size: 14px;
+
+  color: #303847;
+}
+
+.activity-item p {
+  margin: 4px 0 0;
+
+  color: #858b99;
+
+  font-size: 13px;
+}
+
+.activity-item time {
+  color: #999fac;
+
+  font-size: 12px;
+}
+
+.page-state {
+  margin-top: 80px;
+
+  padding: 50px;
+
+  text-align: center;
+
+  background: white;
+
+  border-radius: 20px;
+
+  color: #747b8b;
+}
+
+.error-state {
+  color: #c82f36;
+}
+
+.error-state button {
+  display: block;
+
+  margin: 15px auto 0;
+
+  border: 0;
+
+  background: #7638df;
+
+  color: white;
+
+  padding: 10px 18px;
+
+  border-radius: 9px;
+
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+
+  .stat-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .statistics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .dashboard-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mini-stat-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .activity-item time {
+    display: none;
+  }
+}

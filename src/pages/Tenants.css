@@ -1,0 +1,385 @@
+.tenants-page {
+  padding: 42px 0;
+}
+
+.tenant-summary-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 22px;
+
+  margin-bottom: 28px;
+}
+
+.tenant-summary-card {
+  background: white;
+
+  border:
+    1px solid #eee9fa;
+
+  border-radius: 19px;
+
+  padding: 23px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  box-shadow:
+    0 13px 28px
+    rgba(50, 35, 90, 0.09);
+}
+
+.tenant-summary-card span {
+  display: block;
+
+  color: #747b8b;
+
+  font-size: 14px;
+}
+
+.tenant-summary-card strong {
+  display: block;
+
+  margin:
+    9px
+    0
+    5px;
+
+  color: #2b3340;
+
+  font-size: 31px;
+}
+
+.tenant-summary-card small {
+  color: #959aa7;
+
+  font-size: 12px;
+}
+
+.tenant-icon {
+  width: 49px;
+  height: 49px;
+
+  border-radius: 14px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+
+  font-weight: 700;
+}
+
+.tenant-icon.purple {
+  background: #eee6ff;
+  color: #7938e4;
+}
+
+.tenant-icon.blue {
+  background: #e0edff;
+  color: #2466dc;
+}
+
+.tenant-icon.yellow {
+  background: #fff1cf;
+  color: #ce9000;
+}
+
+.tenant-icon.red {
+  background: #ffebeb;
+  color: #df2e34;
+}
+
+.tenants-card {
+  background: white;
+
+  border:
+    1px solid #eee9fa;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 15px 30px
+    rgba(50, 35, 90, 0.1);
+}
+
+.tenants-toolbar {
+  padding: 21px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  border-bottom:
+    1px solid #eeeaf4;
+}
+
+.tenant-search {
+  height: 43px;
+
+  flex: 1;
+
+  max-width: 440px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 0 13px;
+
+  border:
+    1px solid #e2deeb;
+
+  border-radius: 11px;
+}
+
+.tenant-search span {
+  color: #898394;
+
+  font-size: 21px;
+}
+
+.tenant-search input {
+  border: none;
+
+  outline: none;
+
+  width: 100%;
+
+  color: #3f4654;
+
+  font-size: 14px;
+}
+
+.tenants-toolbar select {
+  height: 43px;
+
+  min-width: 130px;
+
+  padding:
+    0
+    30px
+    0
+    13px;
+
+  border:
+    1px solid #e2deeb;
+
+  border-radius: 11px;
+
+  background: white;
+
+  color: #596174;
+
+  outline: none;
+}
+
+.tenant-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+.tenants-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 850px;
+}
+
+.tenants-table th {
+  padding: 16px 22px;
+
+  background: #faf9fd;
+
+  text-align: left;
+
+  color: #747b8b;
+
+  font-size: 13px;
+
+  font-weight: 650;
+}
+
+.tenants-table td {
+  padding: 17px 22px;
+
+  border-top:
+    1px solid #f0edf5;
+
+  color: #555c6b;
+
+  font-size: 14px;
+}
+
+.tenant-cell {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.tenant-avatar {
+  width: 41px;
+  height: 41px;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #eee6ff;
+
+  color: #7435dc;
+
+  font-weight: 700;
+}
+
+.tenant-cell strong {
+  display: block;
+
+  color: #2d3543;
+
+  font-size: 14px;
+}
+
+.tenant-cell span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #969ba8;
+
+  font-size: 11px;
+}
+
+.plan-badge {
+  display: inline-block;
+
+  padding: 6px 12px;
+
+  border-radius: 16px;
+
+  font-size: 12px;
+
+  font-weight: 650;
+}
+
+.plan-badge.free {
+  background: #f0f1f3;
+  color: #596170;
+}
+
+.plan-badge.basic {
+  background: #f0e8ff;
+  color: #7737dd;
+}
+
+.plan-badge.premium {
+  background: #deedff;
+  color: #2362d4;
+}
+
+.plan-badge.enterprise {
+  background: #f2e4ff;
+  color: #8637df;
+}
+
+.users-count {
+  font-weight: 650;
+
+  color: #414958;
+}
+
+.tenant-action-btn {
+  padding: 7px 14px;
+
+  border:
+    1px solid #ddd6ef;
+
+  border-radius: 8px;
+
+  background: white;
+
+  color: #7336d9;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.tenant-action-btn:hover {
+  background: #f7f3ff;
+}
+
+.empty-row,
+.tenant-state {
+  text-align: center;
+
+  padding: 50px !important;
+
+  color: #999fac;
+}
+
+.tenant-state.error {
+  color: #d63137;
+}
+
+.tenant-table-footer {
+  padding: 17px 22px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  color: #858b99;
+
+  font-size: 13px;
+}
+
+@media (max-width: 1000px) {
+
+  .tenant-summary-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .tenant-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tenants-toolbar {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .tenant-search {
+    max-width: none;
+  }
+}

@@ -1,0 +1,16 @@
+.status-badge {
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.status-badge.active {
+  color: #6439d9;
+}
+
+.status-badge.inactive {
+  color: #cb8c00;
+}
+
+.status-badge.suspended {
+  color: #df3035;
+}

@@ -1,0 +1,357 @@
+.users-page {
+  padding: 42px 0;
+}
+
+.page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.page-heading h1 {
+  margin: 0;
+
+  color: #7638e8;
+
+  font-size: 34px;
+}
+
+.page-heading p {
+  margin: 7px 0 0;
+
+  color: #7c8292;
+}
+
+.primary-btn {
+  border: none;
+
+  padding: 12px 20px;
+
+  border-radius: 13px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #8b3ff0,
+      #7130d3
+    );
+
+  color: white;
+
+  font-weight: 650;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 7px 18px
+    rgba(118, 48, 217, 0.25);
+}
+
+.user-summary-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 22px;
+
+  margin-bottom: 28px;
+}
+
+.summary-card {
+  background: white;
+
+  border:
+    1px solid #eee9fa;
+
+  border-radius: 18px;
+
+  padding: 22px;
+
+  box-shadow:
+    0 12px 27px
+    rgba(50, 35, 90, 0.09);
+}
+
+.summary-card span {
+  display: block;
+
+  color: #747b8b;
+
+  font-size: 14px;
+}
+
+.summary-card strong {
+  display: block;
+
+  margin:
+    10px
+    0
+    5px;
+
+  color: #2b3340;
+
+  font-size: 30px;
+}
+
+.summary-card small {
+  color: #9499a6;
+}
+
+.active-summary strong {
+  color: #713cf0;
+}
+
+.inactive-summary strong {
+  color: #d39200;
+}
+
+.suspended-summary strong {
+  color: #e22e32;
+}
+
+.users-card {
+  background: white;
+
+  border-radius: 20px;
+
+  border:
+    1px solid #eee9fa;
+
+  box-shadow:
+    0 15px 30px
+    rgba(50, 35, 90, 0.1);
+
+  overflow: hidden;
+}
+
+.users-toolbar {
+  padding: 22px;
+
+  display: flex;
+
+  gap: 15px;
+
+  border-bottom:
+    1px solid #eeeaf4;
+}
+
+.search-box {
+  flex: 1;
+
+  max-width: 420px;
+
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 0 13px;
+
+  border:
+    1px solid #e1deeb;
+
+  border-radius: 11px;
+}
+
+.search-box span {
+  color: #8a8498;
+
+  font-size: 21px;
+}
+
+.search-box input {
+  border: none;
+
+  outline: none;
+
+  width: 100%;
+
+  font-size: 14px;
+}
+
+.users-toolbar select {
+  height: 43px;
+
+  padding:
+    0
+    35px
+    0
+    13px;
+
+  border:
+    1px solid #e1deeb;
+
+  border-radius: 11px;
+
+  color: #596174;
+
+  background: white;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.users-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.users-table th {
+  background: #faf9fd;
+
+  text-align: left;
+
+  color: #747b8b;
+
+  font-size: 13px;
+
+  padding: 16px 22px;
+}
+
+.users-table td {
+  padding: 17px 22px;
+
+  border-top:
+    1px solid #f0edf5;
+
+  color: #4f5665;
+
+  font-size: 14px;
+}
+
+.user-cell {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  background: #eee5ff;
+
+  color: #7737dd;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+}
+
+.user-cell strong {
+  display: block;
+
+  color: #2d3543;
+}
+
+.user-cell span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #9297a4;
+
+  font-size: 12px;
+}
+
+.role-badge {
+  background: #f0ebff;
+
+  color: #7138dc;
+
+  padding: 6px 11px;
+
+  border-radius: 16px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.action-btn {
+  border:
+    1px solid #ddd5f2;
+
+  background: white;
+
+  color: #7436dc;
+
+  border-radius: 8px;
+
+  padding: 7px 13px;
+
+  cursor: pointer;
+}
+
+.table-footer {
+  padding: 18px 22px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  color: #858b99;
+
+  font-size: 13px;
+}
+
+.empty-row,
+.table-state {
+  text-align: center;
+
+  padding: 50px !important;
+
+  color: #999fac;
+}
+
+.table-state.error {
+  color: #d63137;
+}
+
+@media (max-width: 900px) {
+
+  .user-summary-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .page-heading {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .user-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .users-toolbar {
+    flex-direction: column;
+  }
+
+  .search-box {
+    max-width: none;
+  }
+}
