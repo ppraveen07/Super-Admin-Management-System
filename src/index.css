@@ -5,13 +5,14 @@
 html,
 body,
 #root {
-  margin: 0;
-  padding: 0;
   width: 100%;
   min-height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  margin: 0;
   font-family:
     Inter,
     -apple-system,
@@ -21,8 +22,8 @@ body {
     Arial,
     sans-serif;
 
-  background: #f7f5fb;
-  color: #1e1b2e;
+  background: #f7f5fc;
+  color: #202938;
 }
 
 button,
@@ -33,8 +34,4 @@ select {
 
 button {
   cursor: pointer;
-}
-
-.app {
-  min-height: 100vh;
 }
