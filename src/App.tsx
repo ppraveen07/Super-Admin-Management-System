@@ -12,7 +12,7 @@ function App() {
       <aside className="sidebar">
         <div className="logo">
           <div className="logo-icon">S</div>
-          <span>Stakly</span>
+          <span>Stackly</span>
         </div>
 
         <nav className="sidebar-nav">
